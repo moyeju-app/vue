@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div id ="index" >
+      <header>
+        박수현의 PORTFOLIO
+      </header>
+    
+      <div id="container">
+        <div id ="nav">
+          <router-link class="link1" to="/resume"> 이력서 </router-link>
+          <router-link class="link1" to="/introduce"> 자기소개서 </router-link>
+          <router-link class="link1" to="/project"> 프로젝트 </router-link>
+          <router-link class="link1" to="/career"> 기타 경력 </router-link>
+        </div>
+       
+        <div id = "main"> 
+          <router-view /> 
+        </div>
+      </div>  
+    <footer>
+      <i>
+        연락처 : 010-9979-XXXX
+        <br />
+        이메일 : qwerty@naver.com
+      </i>
+    </footer>
+  </div>  
 </template>
-
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style src="./App.css"> </style>
